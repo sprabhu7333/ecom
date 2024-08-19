@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="mobile js.js" ></script>
+    <style>
+    .card{
+        border: 1px solid lightseagreen;
+        width: 300px;
+        padding: 10px;
+        margin: 10px;
+        border-radius: 16px;
+        font-family:Arial, Helvetica, sans-serif;
+        transition: 300ms;
+        background-color: aliceblue;
+     } 
+     .f{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+     }
+     .i{
+        width:100%;
+        border-radius: 50px;
+        height:100%;
+     }
+     </style>
+</head>
+<body>
+    <h1 style="text-align: center;">Trending Mobile Phones</h1>
+    <div class="f">
+        <div class="card">
+        <center><img src="https://rukminim2.flixcart.com/image/312/312/xif0q/mobile/g/g/r/note-10-pro-m2003j6a1l-m2101k6p-redmi-original-imah3r2d2vfehuej.jpeg?q=70"width="200px";height="220px";class="i";></center>
+        <h3>redmi note 10 pro</h3>
+        <h3>Rs.14799/-</h3>
+        <h3 id="t">buy now</h3>
+        <div>
+            <label for="item">Quantity:</label><br>
+            <input type="text" id="item" name="item" value=""><br>
+            <input type="button" value="Place" id="v" onclick="order()">
+        </div>
+
+        </div>
+        <div class="card">
+           <center><img src="https://rukminim2.flixcart.com/image/312/312/kklhbbk0/mobile/5/4/p/m3-mzb087cin-poco-original-imafzxf92cbfbnyq.jpeg?q=70" width="200px";height="220px";class="i";></center> 
+            <h3>Poco m3</h3>
+            <h3>Rs.12299/-</h3>
+            <h3 id="t1">Buy Now</h3>
+            <div>
+                <label for="item">Quantity:</label><br>
+                <input type="text" id="item" name="item" value=""><br>
+                <input type="button" value="Place" id="v1" onclick="order1()">
+            </div>
+        </div>
+
+    <div class="card">
+        <center><img src="https://rukminim2.flixcart.com/image/312/312/kekadu80/mobile/z/z/v/realme-7-pro-rmx2170-original-imafv73vwh36pscq.jpeg?q=70" width="200px";height="220px";class="i";></center>
+        <h3>realme 7 pro</h3>
+        <h3>Rs.17999/-</h3>
+        <h3 id="t2">Buy now</h3>
+        <div>
+            <label for="item">Quantity:</label><br>
+            <input type="text" id="item" name="item" value=""><br>
+            <input type="button" value="Place" id="v2" onclick="order2()">
+        </div>
+    </div>
+    <div class="card">
+        <center><img src="https://rukminim2.flixcart.com/image/312/312/l0bbonk0/shopsy-mobile/k/4/l/-original-imagc4qjnkzhty3h.jpeg?q=70" width="180px";height="220px";class="i";></center>
+        <h3>realme narzo 50</h3>
+        <h3>Rs.15499/-</h3>
+        <h3 id="t3">Buy now</h3>
+        <div>
+            <label for="item">Quantity:</label><br>
+            <input type="text" id="item" name="item" value=""><br>
+            <input type="button" value="Place" id="v3" onclick="order3()">
+        </div>
+    </div>
+
+    <div class="card">
+        <center><img src="https://m.media-amazon.com/images/I/61G9RdA0EQL._AC_UL480_FMwebp_QL65_.jpg" width="300px";height="300px";class="i";></center>
+        <h3>samsung galaxy A14 5G</h3>
+        <h3>Rs.16499/-</h3>
+        <h3 id="t4">Buy now</h3>
+        <div>
+            <label for="item">Quantity::</label><br>
+            <input type="text" id="item" name="item" value=""><br>
+            <input type="button" value="Place" id="v4" onclick="order4()">
+        </div>
+    </div>
+
+    <div class="card">
+        <center><img src="https://rukminim2.flixcart.com/image/312/312/xif0q/mobile/u/x/h/t1-44w-v2153-v2168-vivo-original-imahfxhhhfd8xng6.jpeg?q=70" width="300px";height="420px";class="i";></center>
+        <h3>vivo T1 44W</h3>
+        <h3>Rs.14499/-</h3>
+        <h3 id="t5">Buy now</h3>
+        <div>
+            <label for="item">Quantity::</label><br>
+            <input type="text" id="item" name="item" value=""><br>
+            <input type="button" value="Place" id="v5" onclick="order5()">
+        </div>
+    </div>
+    <div class="card">
+        <center><img src="https://rukminim2.flixcart.com/image/312/312/xif0q/mobile/a/p/r/-original-imagkgrxwg386pjk.jpeg?q=70" width="300px";height="420px";class="i";></center>
+        <h3>infinix hot 20 play</h3>
+        <h3>Rs.8199/-</h3>
+        <h3 id="t6">Buy now</h3>
+        <div>
+            <label for="item">Quantity::</label><br>
+            <input type="text" id="item" name="item" value=""><br>
+            <input type="button" value="Place" id="v6" onclick="order6()">
+        </div>
+    </div>
+        <div class="card">
+        <center><img src="https://rukminim2.flixcart.com/image/312/312/jqv8ia80/mobile/a/f/9/honor-h10-lite-na-original-imafcsknsfzunys7.jpeg?q=70" width="200px";height="220px";class="i";></center>
+        <h3>honor 10 lite</h3>
+        <h3>Rs.11999/-</h3>
+        <h3 id="t7">Buy now</h3>
+        <div>
+            <label for="item">Quantity::</label><br>
+            <input type="text" id="item" name="item" value=""><br>
+            <input type="button" value="Place" id="v7" onclick="order7()">
+        </div>
+        </div>
+        <div class="card">
+        <center><img src="https://rukminim2.flixcart.com/image/312/312/jj4ln680/mobile/9/x/v/asus-zenfone-5z-zs621kl-2h003in-zs621kl-2h013in-original-imaf6rn9vgzfh7cd.jpeg?q=70" width="210px";height="220px";class="i";></center>
+        <h3>asus zenphone 5z</h3>
+        <h3>Rs.36299/-</h3>
+        <h3 id="t8">Buy now</h3>
+        <div>
+            <label for="item">Quantity::</label><br>
+            <input type="text" id="item" name="item" value=""><br>
+            <input type="button" value="Place" id="v8" onclick="order8()">
+        </div>
+        </div>
+
+        <div class="card">
+        <center><img src="https://rukminim2.flixcart.com/image/312/312/k9loccw0/mobile/6/8/g/apple-iphone-se-mxvv2hn-a-original-imafrcqmfh4zznmq.jpeg?q=70" width="280px";height="420px";class="i";></center>
+        <h3>apple iphone se</h3>
+        <h3>Rs.3990/-</h3>
+        <h3 id="t9">Buy now</h3>
+        <div>
+            <label for="item">Quantity::</label><br>
+            <input type="text" id="item" name="item" value=""><br>
+            <input type="button" value="Place" id="v9" onclick="order9()">
+        </div>
+        </div>
+        <div class="card">
+            <center><img src="https://rukminim2.flixcart.com/image/312/312/jxz0brk0/mobile/w/s/r/redmi-k20-pro-na-original-imafgb4ye45dtzvf.jpeg?q=70" width="210px";height="420px";class="i";></center>
+            <h3>Redmi K20 Pro</h3>
+            <h3>Rs.24990/-</h3>
+            <h3 id="t10">Buy now</h3>
+            <div>
+                <label for="item">Quantity::</label><br>
+                <input type="text" id="item" name="item" value=""><br>
+                <input type="button" value="Place" id="v10" onclick="order10()">
+            </div>
+            </div>
+
+        <div class="card">
+        <center><img src="https://rukminim2.flixcart.com/image/312/312/l0igvww0/mobile/j/d/g/-original-imagcafg6hbeeqwf.jpeg?q=70" width="210px";height="220px";class="i";></center>
+        <h3>poco m4 pro 5G</h3>
+        <h3>Rs.14499/-</h3>
+        <h3 id="t11">Buy now</h3>
+        <div>
+            <label for="item">Quantity::</label><br>
+            <input type="text" id="item" name="item" value=""><br>
+            <input type="button" value="Place" id="v11" onclick="order11()">
+        </div>
+        </div>
+        <div class="card">
+            <center><img src="https://rukminim2.flixcart.com/image/312/312/l2jcccw0/mobile/i/1/y/-original-imagdu8gtefvchbn.jpeg?q=70" width="300px";height="220px";class="i";></center>
+            <h3>poco m4 5G</h3>
+            <h3>Rs.12000/-</h3>
+            <h3 id="t12">Buy now</h3>
+            <div>
+                <label for="item">Quantity::</label><br>
+                <input type="text" id="item" name="item" value=""><br>
+                <input type="button" value="Place" id="v12" onclick="order12()">
+            </div>
+        </div>
+        <div class="card">
+            <center><img src="https://rukminim2.flixcart.com/image/312/312/kg6vfrk0/mobile/e/s/6/mi-10t-pro-mzb07zdin-original-imafwhbrythgcddt.jpeg?q=70" width="180px";height="220px";class="i";></center>
+            <h3>mi 10T pro</h3>
+            <h3>Rs.29990/-</h3>
+            <h3 id="t13">Buy now</h3>
+            <div>
+                <label for="item">Quantity::</label><br>
+                <input type="text" id="item" name="item" value=""><br>
+                <input type="button" value="Place" id="v13" onclick="order13()">
+            </div>
+        </div>
+        <div class="card">
+            <center><img src="https://rukminim2.flixcart.com/image/312/312/xif0q/mobile/k/7/p/-original-imagcvhfpjq25hdr.jpeg?q=70" width="180px";height="220px";class="i";></center> 
+            <h3>redmi note 11 pro</h3>
+            <h3>Rs.18490/-</h3>
+            <h3 id="t14">Buy now</h3>
+            <div>
+                <label for="item">Quantity::</label><br>
+                <input type="text" id="item" name="item" value=""><br>
+                <input type="button" value="Place" id="v14" onclick="order14()">
+            </div>
+        </div>
+</div>
+</body>
+</html>

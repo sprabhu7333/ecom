@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="mobile js.js" ></script>
+    <style>
+    .card{
+        border: 1px solid lightseagreen;
+        width: 300px;
+        padding: 10px;
+        margin: 10px;
+        border-radius: 16px;
+        font-family:Arial, Helvetica, sans-serif;
+        transition: 300ms;
+        background-color: aliceblue;
+     } 
+     .f{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+     }
+     .i{
+        width:100%;
+        border-radius: 50px;
+        height:300px
+     }
+     </style>
+    
+</head>
+<body>
+    <h1 style="text-align: center;">Mobile And Laptop Accessories</h1>
+    <div class="f">
+        <div class="card">
+        <center><img src="https://rukminim2.flixcart.com/image/612/612/kzzw5u80/keyboard/multi-device-keyboard/o/2/d/km3322w-km3322w-keyboard-mouse-combo-anti-fade-spill-resistant-original-imagbvyatqteauf2.jpeg?q=70"width="310px";height="720px";class="i";></center>
+        <h3>key board</h3>
+        <h3>Rs.499/-</h3>
+        <h3 id="t">buy now</h3>
+        <div>
+            <label for="item">Quantity:</label><br>
+            <input type="text" id="item" name="item" value=""><br>
+            <input type="button" value="Place" id="v" onclick="order()">
+        </div>
+
+        </div>
+        <div class="card">
+           <center><img src="https://rukminim2.flixcart.com/image/612/612/k1pbpu80/router/k/f/n/tp-link-tl-wr845n-wireless-n-original-imafhsgzshrqdy59.jpeg?q=70" width="200px";height="420px";class="i";></center> 
+            <h3>tp linker</h3>
+            <h3>Rs.1700/-</h3>
+            <h3 id="t1">Buy Now</h3>
+            <div>
+                <label for="item">Quantity:</label><br>
+                <input type="text" id="item" name="item" value=""><br>
+                <input type="button" value="Place" id="v1" onclick="order1()">
+            </div>
+        </div>
+
+    <div class="card">
+        <center><img src="https://rukminim2.flixcart.com/image/612/612/xif0q/mouse/w/e/o/zeb-jaguar-zebronics-original-imah3t84fmrh4xwn.jpeg?q=70" width="180px";height="720px";class="i";></center>
+        <h3>zibronics mouse</h3>
+        <h3>Rs.190/-</h3>
+        <h3 id="t2">Buy now</h3>
+        <div>
+            <label for="item">Quantity:</label><br>
+            <input type="text" id="item" name="item" value=""><br>
+            <input type="button" value="Place" id="v2" onclick="order2()">
+        </div>
+    </div>
+    <div class="card">
+        <center><img src="https://rukminim2.flixcart.com/image/612/612/k3dc7m80pkrrdj/external-hard-drive/hdd/7/5/m/wd-wdbhhg0010bbk-eesn-original-imafmkq8ytu6pxgj.jpeg?q=70" width="200px";height="720px";class="i";></center>
+        <h3>WD hard disk</h3>
+        <h3>Rs.4990/-</h3>
+        <h3 id="t3">Buy now</h3>
+        <div>
+            <label for="item">Quantity:</label><br>
+            <input type="text" id="item" name="item" value=""><br>
+            <input type="button" value="Place" id="v3" onclick="order3()">
+        </div>
+    </div>
+
+    <div class="card">
+        <center><img src="https://m.media-amazon.com/images/I/81lGxS2ZisL._AC_UL480_FMwebp_QL65_.jpg" width="300px";height="720px";class="i";></center>
+        <h3>alexa voice assistant</h3>
+        <h3>Rs.4990/-</h3>
+        <h3 id="t4">Buy now</h3>
+        <div>
+            <label for="item">Quantity:</label><br>
+            <input type="text" id="item" name="item" value=""><br>
+            <input type="button" value="Place" id="v4" onclick="order4()">
+        </div>
+    </div>
+
+    <div class="card">
+        <center><img src="https://rukminim2.flixcart.com/image/612/612/kfcv6vk0/power-bank/r/f/5/power-bank-20000-plm18zm-mi-original-imafvtc7x9zgrzbz.jpeg?q=70" width="115px";height="720px";class="i";></center>
+        <h3>mi power bank</h3>
+        <h3>Rs.2990/-</h3>
+        <h3 id="t5">Buy now</h3>
+        <div>
+            <label for="item">Quantity:</label><br>
+            <input type="text" id="item" name="item" value=""><br>
+            <input type="button" value="Place" id="v5" onclick="order5()">
+        </div>
+    </div>
+    <div class="card">
+        <center><img src="https://rukminim2.flixcart.com/image/612/612/xif0q/headphone/t/4/p/-original-imagrddw8rpjwfag.jpeg?q=70" width="200px";height="720px";class="i";></center>
+        <h3>realme headset</h3>
+        <h3>Rs.490/-</h3>
+        <h3 id="t6">Buy now</h3>
+        <div>
+            <label for="item">Quantity:</label><br>
+            <input type="text" id="item" name="item" value=""><br>
+            <input type="button" value="Place" id="v6" onclick="order6()">
+        </div>
+    </div>
+        <div class="card">
+            <center><img src="https://rukminim2.flixcart.com/image/612/612/xif0q/headphone/m/j/9/-original-imagzuzzfrmrfsrw.jpeg?q=70" width="220px";height="720px";class="i";></center>
+        <h3>boat headset</h3>
+        <h3>Rs.1290/-</h3>
+        <h3 id="t7">Buy now</h3>
+        <div>
+            <label for="item">Quantity:</label><br>
+            <input type="text" id="item" name="item" value=""><br>
+            <input type="button" value="Place" id="v7" onclick="order7()">
+        </div>
+        </div>
+        <div class="card">
+            <center><img src="https://rukminim2.flixcart.com/image/612/612/l2jcccw0/memory-card/sdxc-uhs-i-card/s/w/y/sdsqua4-064g-gn6mn-sandisk-original-imagdv2wy6qub3az.jpeg?q=70" width="300px";height="720px";class="i";></center>
+        <h3>Sandisk memory card</h3>
+        <h3>Rs.599/-</h3>
+        <h3 id="t8">Buy now</h3>
+        <div>
+            <label for="item">Quantity:</label><br>
+            <input type="text" id="item" name="item" value=""><br>
+            <input type="button" value="Place" id="v8" onclick="order8()">
+        </div>
+        </div>
+
+</div>
+</body>
+</html>

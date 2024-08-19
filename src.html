@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <script src="mobile js.js" ></script>
+        <style>
+            #hedder{
+                background-color:#2874F0;
+                height: 110px;
+                padding: 30px;
+            }
+            #nav{
+                background-color: white;
+                height: 100%;
+            }
+            *{
+              box-sizing: border-box;
+            }
+            li{
+              display:inline;
+            }
+            body{
+              font-family: Verdana, sans-serif;
+            }
+            .mySlides{
+              display: none;
+            }
+            img{
+              vertical-align: middle;
+            }
+            /* Slideshow container */
+            .slideshow-container {
+              max-width: 550px;
+              position:relative;
+              margin: auto;
+              width: 100%;
+            }
+            /* Caption text */
+            .text {
+              color: black;
+              font-size: 25px;
+              padding: 10px;
+              position: relative;
+              bottom: 8px;
+              width: 100%;
+              text-align: center;
+            }
+            /* The dots/bullets/indicators */
+            .dot {
+              height: 15px;
+              width: 15px;
+              margin: 2px;
+              background-color: #bbb;
+              border-radius: 50%;
+              display: inline-block;
+              transition: background-color 0.6s ease;
+            }
+            .active {
+              background-color: #717171;
+            }
+            /* Fading animation */
+            .fade {
+              animation-name: fade;
+              animation-duration: 1.5s;
+            }
+            .f{
+              display: flex;
+              justify-content: center;
+              flex-wrap: wrap;
+           }
+            @keyframes fade {
+              from {opacity: .4} 
+              to {opacity: 1}
+            }
+            /* On smaller screens, decrease text size */
+            @media only screen and (max-width: 1000px) {
+              .text {font-size: 11px}
+            }
+            .card{
+                    border: 1px solid lightseagreen;
+                    width: 300px;
+                    padding: 10px;
+                    margin: 10px;
+                    border-radius: 16px;
+                    font-family:Arial, Helvetica, sans-serif;
+                    transition: 300ms;
+                    background-color: aliceblue;
+                } 
+        </style>
+    </head>
+    <body>       
+        <div id="hedder">
+           &emsp;<img src="https://static-assets-web.flixcart.com/fk-p-linchpin-web/fk-cp-zion/img/flipkart-plus_8d85f4.png"width="90";height="70";>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+            <a href="D:\DREAM\html\ecom\mobile1.html" target="_blank"><img src="https://rukminim2.flixcart.com/image/312/312/xif0q/mobile/k/l/l/-original-imagtc5fz9spysyk.jpeg?q=70"width="50";height="500";padding="20px";></a><b>mobiles</b>&emsp;&emsp;&emsp;
+            <a href="D:\DREAM\html\ecom\laptop.html" target="_blank"><img src="https://rukminim2.flixcart.com/image/312/312/kp5sya80/screen-guard/tempered-glass/o/v/n/apple-macbook-air-m1-13-3-inch-lightwings-original-imag3gh5xftgbpg3.jpeg?q=70"width="90";height="70";></a><b>laptops</b>&emsp;&emsp;&emsp;&emsp;
+            <a href="D:\DREAM\html\ecom\acco.html" target="_blank"><img src="https://rukminim2.flixcart.com/image/612/612/xif0q/computer-acc-combo/o/p/y/-original-imagqdx6cqrjjzpg.jpeg?q=70"width="70";height="50";></a><b>accessories</b>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+            <a href="#"><img src="https://tse4.mm.bing.net/th?id=OIP.WyoNuJYyf5Vl96UaA2LfpwHaHx&pid=Api&P=0&h=220"width="70";height="50";></a><b>login</b>
+        </div>
+        <br><br>
+        <center>
+        <div class="slideshow-container">
+
+            <div class="mySlides fade">
+              <a href="D:\DREAM\html\ecom\mobile1.html" target="_blank"><img src="https://rukminim2.flixcart.com/image/312/312/kg8avm80/mobile/c/v/t/apple-iphone-12-pro-max-dummyapplefsn-original-imafwgcyhmzhaapd.jpeg?q=70" style="width: 325px";height="50px";></a>
+              <div class="text"> 13 pro max at 1,20,000</div>
+            </div>
+            
+            <div class="mySlides fade">
+              <a href="D:\DREAM\html\ecom\laptop.html" target="_blank"><img src="https://rukminim2.flixcart.com/image/312/312/kp2y2kw0/computer/n/n/a/na-thin-and-light-laptop-lenovo-original-imag3dnyeycazpvf.jpeg?q=70" style="width:470px";height="50px"></a>
+              <div class="text">lenovo idea pad slim 3 at 57,000</div>
+            </div>
+            
+            <div class="mySlides fade">
+              <a href="D:\DREAM\html\ecom\acco.html" target="_blank"><img src="https://m.media-amazon.com/images/I/81lGxS2ZisL._AC_UL480_FMwebp_QL65_.jpg" style="width:480px"></a>
+              <div class="text">alexa voice assistant</div>
+            </div>            
+        </div>
+      </center>
+        <center>
+          <br>
+          <div>          
+            <div style="text-align:center">
+              <span class="dot"></span> 
+              <span class="dot"></span> 
+              <span class="dot"></span> 
+            </div>
+            <hr>
+            <div class="f">
+                <div class="card">
+                  <center><img src="https://rukminim2.flixcart.com/image/312/312/kklhbbk0/mobile/5/4/p/m3-mzb087cin-poco-original-imafzxf92cbfbnyq.jpeg?q=70" width="200px";height="220px";class="i";></center> 
+                  <h3>Poco m3</h3>
+                  <h3>Rs.12299/-</h3>
+                  <h3 id="t">Buy Now</h3>
+                  <div>
+                      <label for="item">Quantity:</label><br>
+                      <input type="text" id="item" name="item" value=""><br>
+                      <input type="button" value="Place" id="v" onclick="order()">
+                  </div>
+              </div>
+              <div class="card">
+                  <center><img src="https://rukminim2.flixcart.com/image/312/312/kekadu80/mobile/z/z/v/realme-7-pro-rmx2170-original-imafv73vwh36pscq.jpeg?q=70" width="200px";height="220px";class="i";></center>
+                  <h3>realme 7 pro</h3>
+                  <h3>Rs.17999/-</h3>
+                  <h3 id="t1">Buy now</h3>
+                  <div>
+                      <label for="item">Quantity:</label><br>
+                      <input type="text" id="item" name="item" value=""><br>
+                      <input type="button" value="Place" id="v1" onclick="order1()">
+                  </div>
+              </div>
+              <div class="card">
+                  <center><img src="https://rukminim2.flixcart.com/image/312/312/l0bbonk0/shopsy-mobile/k/4/l/-original-imagc4qjnkzhty3h.jpeg?q=70" width="200px";height="220px";class="i";></center>
+                  <h3>realme narzo 50</h3>
+                  <h3>Rs.15499/-</h3>
+                  <h3 id="t2">Buy now</h3>
+                  <div>
+                      <label for="item">Quantity:</label><br>
+                      <input type="text" id="item" name="item" value=""><br>
+                      <input type="button" value="Place" id="v2" onclick="order2()">
+                  </div>
+              </div>
+              <div class="card">
+                  <center><img src="https://rukminim2.flixcart.com/image/612/612/ki96c280-0/computer/l/h/a/na-thin-and-light-laptop-acer-original-imafy3yz5dmfghdx.jpeg?q=70" width="280px";height="720px";class="i";></center> 
+                  <h3>acer aspire</h3>
+                  <h3>Rs.51990/-</h3>
+                  <h3 id="t3">Buy Now</h3>
+                  <div>
+                      <label for="item">Quantity:</label><br>
+                      <input type="text" id="item" name="item" value=""><br>
+                      <input type="button" value="Place" id="v3" onclick="order3()">
+                  </div>
+              </div>
+              <div class="card">
+                <center><img src="https://rukminim2.flixcart.com/image/312/312/l44hyfk0/computer/b/d/y/-original-imagf39qmdjgesc9.jpeg?q=70" width="280px";height="720px";class="i";></center>
+                <h3>infinix X1 Slim</h3>
+                <h3>Rs.38990/-</h3>
+                <h3 id="t4">Buy Now</h3>
+                <div>
+                    <label for="item">Quantity:</label><br>
+                    <input type="text" id="item" name="item" value=""><br>
+                    <input type="button" value="Place" id="v4" onclick="order4()">
+                </div>
+              </div>
+              <div class="card">
+                <center><img src="https://rukminim2.flixcart.com/image/312/312/xif0q/computer/e/w/z/-original-imahyjmyd6c3tx3s.jpeg?q=70" width="280px";height="720px";class="i";></center>
+                <h3>Asus TUF Gamming A15</h3>
+                <h3>Rs.45990/-</h3>
+                <h3 id="t5">Buy Now</h3>
+                <div>
+                    <label for="item">Quantity:</label><br>
+                    <input type="text" id="item" name="item" value=""><br>
+                    <input type="button" value="Place" id="v5" onclick="order5()">
+                </div>
+              </div>
+              <div class="card">
+                <center><img src="https://rukminim2.flixcart.com/image/612/612/k3dc7m80pkrrdj/external-hard-drive/hdd/7/5/m/wd-wdbhhg0010bbk-eesn-original-imafmkq8ytu6pxgj.jpeg?q=70" width="200px";height="720px";class="i";></center>
+                <h3>WD hard disk</h3>
+                <h3>Rs.4990/-</h3>
+                <h3 id="t6">Buy now</h3>
+                <div>
+                    <label for="item">Quantity:</label><br>
+                    <input type="text" id="item" name="item" value=""><br>
+                    <input type="button" value="Place" id="v6" onclick="order6()">
+                </div>
+              </div>
+              <div class="card">
+                <center><img src="https://rukminim2.flixcart.com/image/612/612/k1pbpu80/router/k/f/n/tp-link-tl-wr845n-wireless-n-original-imafhsgzshrqdy59.jpeg?q=70" width="285px";height="420px";class="i";></center> 
+                 <h3>tp linker</h3>
+                 <h3>Rs.1700/-</h3>
+                 <h3 id="t7">Buy Now</h3>
+                 <div>
+                     <label for="item">Quantity:</label><br>
+                     <input type="text" id="item" name="item" value=""><br>
+                     <input type="button" value="Place" id="v7" onclick="order7()">
+                 </div>
+              </div>
+              <div class="card">
+                <center><img src="https://rukminim2.flixcart.com/image/612/612/kfcv6vk0/power-bank/r/f/5/power-bank-20000-plm18zm-mi-original-imafvtc7x9zgrzbz.jpeg?q=70" width="110px";height="720px";class="i";></center>
+                <h3>mi power bank</h3>
+                <h3>Rs.2990/-</h3>
+                <h3 id="t8">Buy now</h3>
+                <div>
+                    <label for="item">Quantity:</label><br>
+                    <input type="text" id="item" name="item" value=""><br>
+                    <input type="button" value="Place" id="v8" onclick="order8()">
+                </div>
+              </div>
+            </div>
+          </div>
+    </center>
+          <script>
+            let slideIndex = 0;
+            showSlides();  
+            function showSlides() {
+              let i;
+              let slides = document.getElementsByClassName("mySlides");
+              let dots = document.getElementsByClassName("dot");
+              for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";  
+              }
+              slideIndex++;
+              if (slideIndex > slides.length) {slideIndex = 1}    
+              for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+              }
+              slides[slideIndex-1].style.display = "block";  
+              dots[slideIndex-1].className += " active";
+              setTimeout(showSlides, 2000); // Change image every 2 seconds
+            }
+          </script>          
+          <footer id="footer">
+            <hr>
+            <ul>
+              <li><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNiIgaGVpZ2h0PSIxNSIgdmlld0JveD0iMCAwIDE2IDE1Ij4KICAgIDxkZWZzPgogICAgICAgIDxsaW5lYXJHcmFkaWVudCBpZD0iYSIgeDE9IjAlIiB4Mj0iODYuODc2JSIgeTE9IjAlIiB5Mj0iODAuMjAyJSI+CiAgICAgICAgICAgIDxzdG9wIG9mZnNldD0iMCUiIHN0b3AtY29sb3I9IiNGRkQ4MDAiLz4KICAgICAgICAgICAgPHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjRkZBRjAwIi8+CiAgICAgICAgPC9saW5lYXJHcmFkaWVudD4KICAgIDwvZGVmcz4KICAgIDxnIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0iZXZlbm9kZCI+CiAgICAgICAgPHBhdGggZD0iTS0yLTJoMjB2MjBILTJ6Ii8+CiAgICAgICAgPHBhdGggZmlsbD0idXJsKCNhKSIgZmlsbC1ydWxlPSJub256ZXJvIiBkPSJNMTUuOTMgNS42MTRoLTIuOTQ4VjQuMTRjMC0uODE4LS42NTUtMS40NzMtMS40NzMtMS40NzNIOC41NmMtLjgxNyAwLTEuNDczLjY1NS0xLjQ3MyAxLjQ3M3YxLjQ3NEg0LjE0Yy0uODE4IDAtMS40NjYuNjU2LTEuNDY2IDEuNDc0bC0uMDA3IDguMTA1YzAgLjgxOC42NTUgMS40NzQgMS40NzMgMS40NzRoMTEuNzljLjgxOCAwIDEuNDc0LS42NTYgMS40NzQtMS40NzRWNy4wODhjMC0uODE4LS42NTYtMS40NzQtMS40NzQtMS40NzR6bS00LjQyMSAwSDguNTZWNC4xNGgyLjk0OHYxLjQ3NHoiIHRyYW5zZm9ybT0idHJhbnNsYXRlKC0yIC0yKSIvPgogICAgPC9nPgo8L3N2Zz4K">Become a seller</li>
+              <li>&emsp;&emsp;&emsp;<img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxOCIgaGVpZ2h0PSIxNyIgdmlld0JveD0iMCAwIDE4IDE3Ij4KICAgIDxkZWZzPgogICAgICAgIDxsaW5lYXJHcmFkaWVudCBpZD0iYSIgeDE9IjAlIiB4Mj0iODYuODc2JSIgeTE9IjAlIiB5Mj0iODAuMjAyJSI+CiAgICAgICAgICAgIDxzdG9wIG9mZnNldD0iMCUiIHN0b3AtY29sb3I9IiNGRkQ4MDAiLz4KICAgICAgICAgICAgPHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjRkZBRjAwIi8+CiAgICAgICAgPC9saW5lYXJHcmFkaWVudD4KICAgIDwvZGVmcz4KICAgIDxnIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0iZXZlbm9kZCI+CiAgICAgICAgPHBhdGggZD0iTS0xLTFoMjB2MjBILTF6Ii8+CiAgICAgICAgPHBhdGggZmlsbD0idXJsKCNhKSIgZmlsbC1ydWxlPSJub256ZXJvIiBkPSJNMTYuNjY3IDVIMTQuODVjLjA5Mi0uMjU4LjE1LS41NDIuMTUtLjgzM2EyLjQ5NyAyLjQ5NyAwIDAgMC00LjU4My0xLjM3NUwxMCAzLjM1bC0uNDE3LS41NjdBMi41MSAyLjUxIDAgMCAwIDcuNSAxLjY2N2EyLjQ5NyAyLjQ5NyAwIDAgMC0yLjUgMi41YzAgLjI5MS4wNTguNTc1LjE1LjgzM0gzLjMzM2MtLjkyNSAwLTEuNjU4Ljc0Mi0xLjY1OCAxLjY2N2wtLjAwOCA5LjE2NkExLjY2IDEuNjYgMCAwIDAgMy4zMzMgMTcuNWgxMy4zMzRhMS42NiAxLjY2IDAgMCAwIDEuNjY2LTEuNjY3VjYuNjY3QTEuNjYgMS42NiAwIDAgMCAxNi42NjcgNXptMCA2LjY2N0gzLjMzM3YtNWg0LjIzNEw1LjgzMyA5LjAyNWwxLjM1Ljk3NSAxLjk4NC0yLjdMMTAgNi4xNjdsLjgzMyAxLjEzMyAxLjk4NCAyLjcgMS4zNS0uOTc1LTEuNzM0LTIuMzU4aDQuMjM0djV6IiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtMSAtMSkiLz4KICAgIDwvZz4KPC9zdmc+Cg=="> card</li>
+              <li>&emsp;&emsp;&emsp;<img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNSIgaGVpZ2h0PSIxNSIgdmlld0JveD0iMCAwIDE1IDE1Ij4KICAgIDxkZWZzPgogICAgICAgIDxsaW5lYXJHcmFkaWVudCBpZD0iYSIgeDE9IjAlIiB4Mj0iODYuODc2JSIgeTE9IjAlIiB5Mj0iODAuMjAyJSI+CiAgICAgICAgICAgIDxzdG9wIG9mZnNldD0iMCUiIHN0b3AtY29sb3I9IiNGRkQ4MDAiLz4KICAgICAgICAgICAgPHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjRkZBRjAwIi8+CiAgICAgICAgPC9saW5lYXJHcmFkaWVudD4KICAgIDwvZGVmcz4KICAgIDxnIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0iZXZlbm9kZCI+CiAgICAgICAgPHBhdGggZD0iTS0yLTNoMjB2MjBILTJ6Ii8+CiAgICAgICAgPHBhdGggZmlsbD0idXJsKCNhKSIgZmlsbC1ydWxlPSJub256ZXJvIiBkPSJNOS41IDNDNS4zNiAzIDIgNi4zNiAyIDEwLjUgMiAxNC42NCA1LjM2IDE4IDkuNSAxOGM0LjE0IDAgNy41LTMuMzYgNy41LTcuNUMxNyA2LjM2IDEzLjY0IDMgOS41IDN6bS43NSAxMi43NWgtMS41di0xLjVoMS41djEuNXptMS41NTMtNS44MTNsLS42NzYuNjljLS41NC41NDgtLjg3Ny45OTgtLjg3NyAyLjEyM2gtMS41di0uMzc1YzAtLjgyNS4zMzgtMS41NzUuODc3LTIuMTIzbC45My0uOTQ1Yy4yNzgtLjI3LjQ0My0uNjQ1LjQ0My0xLjA1NyAwLS44MjUtLjY3NS0xLjUtMS41LTEuNVM4IDcuNDI1IDggOC4yNUg2LjVhMyAzIDAgMSAxIDYgMGMwIC42Ni0uMjcgMS4yNi0uNjk3IDEuNjg4eiIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTIgLTMpIi8+CiAgICA8L2c+Cjwvc3ZnPgo="> Help center</li>
+              <li>&emsp;@ 2007-2024 Flipkart.com</li>
+              <li>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<img src="https://static-assets-web.flixcart.com/fk-p-linchpin-web/fk-cp-zion/img/payment-method_69e7ec.svg"></li>
+            </ul>
+          </footer> 
+    </body>
+</html>
